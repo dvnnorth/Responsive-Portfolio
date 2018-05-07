@@ -185,15 +185,121 @@ textarea {
     padding-top: 10px;
 }
 
+/* Use three `@media screen` tags, each with one of these `max-width`s: `980px`, `768px` and `640px` */
+
 /* For Mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 640px) {
+
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
     #mainBody {
         width: 100%;
-        margin: 100px auto;
+        margin: 40px auto;
         position: relative;
         background-color: #ffffff;
         /* border: 5px solid #ddd; I know its part of the spec, but the shadow just looks way better imo */
         box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
         padding: 23px;
     }
+
+    #avatarImage {
+        float: none;
+        display: block;
+        border-radius: 50%;
+        margin: 10px auto 10px auto;
+    }
+
+    #navBarTop {
+        width: 100%;
+        position: static;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    }
+
+    #navBarContent {
+        width: 100%;
+        background-color: white;
+        margin: auto;
+    }
+    
+    #nameBox {
+        float: none;
+        width: 100%;
+        padding: 23px;
+        margin: auto;
+        text-align: center;
+        background-color: #4aaaa5;
+        color: #fff;
+    }
+
+
+    #navBarTop li {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    #linksNav {
+        float: none;
+        padding: 10px;
+    }
+    
+    #linksNav li:nth-of-type(-n+2) {
+        padding-right: 20px;
+        border-right: 1px solid #ddd;
+    }
+
+    #pageHeader {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+    }    
+
+    #pageFooterBar {
+        background-color: #1b3440;
+        border-top: 5px #4aaaa5 solid;
+        height: 45px;
+        position: static;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding-top: 12px;
+        font-size: 14px;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    }
+
+    .portfolioItem {
+        width: 200px;
+        margin: 10px auto 0px auto;
+        display: block;
+        position: relative;
+        overflow: auto;
+        float: none;
+        color: #fff;
+    }
+    
+    .portfolioLinkBox {
+        position: absolute;
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #4aaaa5;
+        top: 140px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 980px) {
+    
 }
